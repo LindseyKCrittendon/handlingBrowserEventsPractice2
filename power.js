@@ -32,6 +32,13 @@ document.querySelector("#activate-xray").addEventListener("click", function(){
 })
 
 // Once that is complete, add two more buttons
+document.querySelector("#activate-all").addEventListener("click", function(){
+    const activateAllFunction = document.querySelectorAll("#powerList");
+    
+    activateAllFunction.classList.add("enabled")
+    console.log("activate-all clicked")
+    activateAllFunction.classList.remove("disabled")
+})
 
 // Enable All Powers
 // Disable All Powers
